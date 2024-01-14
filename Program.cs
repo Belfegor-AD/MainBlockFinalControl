@@ -1,6 +1,6 @@
 ﻿string[] CreateArray()
 {
-    Console.WriteLine("Введите элементы массива через запятую: ");
+    Console.Write("Введите элементы массива через запятую: ");
     string input = Console.ReadLine()!;
     string[] array = input.Split(',');
     return array;
@@ -26,11 +26,14 @@ string[] FilterArray(string[] array)
     return newArray;
 }
 
-// string[] inputArray = CreateArray();
-// string[] filteredArray = FilterArray(inputArray);
+Console.Clear();
+string[] filteredArray = FilterArray(CreateArray());
 
-Console.WriteLine("Результат:");
-foreach (string i in FilterArray(CreateArray()))
-{
-Console.Write(i + ", ");
+Console.Write("Результат: [");
+for (int i = 0; i < filteredArray.Length; i++){
+    if (i < filteredArray.Length - 1)
+        Console.Write(filteredArray[i] + ", ");
+    else
+        Console.Write(filteredArray[i]);
 }
+Console.Write("]");

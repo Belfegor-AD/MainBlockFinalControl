@@ -10,11 +10,11 @@
 
 Пример использования:
 
-[“Hello”, “2”, “world”, “:-)”] → [“2”, “:-)”]
+Hello,2,world,:-) → [2,:-)]
 
-[“1234”, “1567”, “-2”, “computer science”] → [“-2”]
+1234,1567,-2,computer science → [-2]
 
-[“Russia”, “Denmark”, “Kazan”] → []
+Russia,Denmark,Kazan → []
 
 
 ## Что делает каждая функция
